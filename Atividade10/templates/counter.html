@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Count Page</title></head>
+    <body>
+        Contador de requisições: {{counter}}
+        <form action="/" method="GET">
+            <input type="hidden" name="counter"
+            value={{counter}} />
+            <br><br>
+            Contador de requisições cookies: {{counter_cookie}}
+            <br><input type="submit" value="Enviar" />
+        </form>
+        <br><br><br><br>
+        <form method="post" action="/login">
+            {{answer}}<br>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+            <br>
+            <input type="submit" value="Login">
+        </form>
+</body>
